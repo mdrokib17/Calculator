@@ -1,0 +1,137 @@
+:root {
+    --main-color: black;
+    --secound-color: #5E4AB5;
+    --third-color: #FFC107;
+}
+
+::selection {
+    background: none;
+}
+
+.calculator-head {
+    width: 100%;
+    height: 130px;
+    /* background: red; */
+    /* border: 1px solid black; */
+}
+
+.calculator {
+    border-radius: 0px;
+    /* border-image: url(../image/border.png); */
+    /* border-top-left-radius: 50px; */
+    max-width: 350px;
+    border: 10px solid white;
+    margin: 0px auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px #8c8c8c9c;
+    /* border-bottom-right-radius: 50px; */
+    transition: .3s;
+    animation-name: rokib;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.calculator-data {
+    column-count: 4;
+    column-gap: 0px !important;
+}
+
+.calculator-data button {
+    transition: .3s;
+    color: white;
+    font-family: arial;
+    outline: none;
+    width: 89px;
+    background-color: #3dbec4;
+    padding: 20px 15px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 25px;
+    border: 1px solid white;
+    column-gap: 8px !important;
+    transition-timing-function: cubic-bezier(0, 1.27, 0.68, 1.07);
+}
+
+.calculator-data button:hover {
+    background: #ffc107;
+}
+
+input[type="text"] {
+    padding-right: 5px;
+    font-size: 40px;
+    width: 100%;
+    height: 90px;
+    text-align: end;
+    border: none;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #3dbec4;
+    box-sizing: border-box;
+    /* background: linear-gradient(
+45deg
+, black, transparent); */
+}
+
+button.equal {
+    background: var(--third-color);
+}
+
+button.scolor {
+    background: var(--secound-color);
+}
+
+button.calcolor {
+    background: #e70ca6f7;
+}
+
+.calculator-head h1 {
+    border-bottom-left-radius: 1px;
+    background: linear-gradient(to left, #5e4ab5, #3dbec4, #e814a9);
+    margin: 0;
+    font-weight: 100;
+    /* padding: 0; */
+    text-align: end;
+    color: #ffffff;
+    font-size: 23px;
+    font-family: 'Dancing Script', cursive;
+    padding: 0px 12px 6px 0px;
+}
+
+.calculator-head h1 span {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    /* color: #5e4ab5; */
+    /* padding: 10px 0px; */
+    text-transform: uppercase;
+    animation-name: madeby;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+body {
+    background: linear-gradient(to left, #3dbec4, #5e4ab5, #ffc107);
+}
+
+input[type="text"]:focus {
+    border: 2px solid #5e4ab5;
+}
+
+@keyframes rokib {
+    0% {
+        transform: translatey(-800px)
+    }
+    100% {
+        transform: translatey(10px)
+    }
+}
+
+@keyframes madeby {
+    0% {
+        transform: translateY(-50px)
+    }
+    110% {
+        transform: translateY(50px)
+    }
+}
